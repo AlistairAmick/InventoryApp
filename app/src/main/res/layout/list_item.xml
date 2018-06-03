@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="@dimen/tv_listitem_name_width"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/tv_big_1_size"
+        android:textColor="#2B3D4D" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_listitem_quantity_marginLeft"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/tv_big_0_size"
+        android:textColor="#2B3D4D" />
+
+    <Button
+        android:id="@+id/saleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/sale_button"
+        style="@style/SaleBtnStyle"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/tv_small_size"
+        android:textColor="#2B3D4D"/>
+
+</RelativeLayout>

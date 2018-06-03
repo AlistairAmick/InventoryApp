@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">16dp</dimen>
+
+    <dimen name="btn_addImg_width">100dp</dimen>
+    <dimen name="btn_addImg_height">75dp</dimen>
+    <dimen name="btn_addImg_marginLeft">50dp</dimen>
+    <dimen name="btn_btmBtns_margin">5dp</dimen>
+    <dimen name="btn_round_radii">5dp</dimen>
+    <dimen name="btn_round_strokeWidth">1dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="iv_item_width">110dp</dimen>
+    <dimen name="iv_item_height">110dp</dimen>
+
+    <dimen name="ll_img_container_marginTop">8dp</dimen>
+    <dimen name="ll_btmBtns_height">65dp</dimen>
+
+    <dimen name="tv_small_size">14sp</dimen>
+    <dimen name="tv_middle_size">16sp</dimen>
+    <dimen name="tv_big_0_size">19sp</dimen>
+    <dimen name="tv_big_1_size">22sp</dimen>
+
+    <dimen name="tv_listitem_name_width">145dp</dimen>
+    <dimen name="tv_listitem_quantity_marginLeft">150dp</dimen>
+
+    <dimen name="et_quantity_width">150dp</dimen>
+    <dimen name="et_price_width">185dp</dimen>
+
+    <dimen name="btn_corners_radii">10dp</dimen>
+    <dimen name="btn_quantity_height">32dp</dimen>
+    <dimen name="btn_quantity_width">32dp</dimen>
+</resources>
+

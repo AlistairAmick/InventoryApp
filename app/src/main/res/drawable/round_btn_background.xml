@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/btn_round_strokeWidth"
+        android:color="@color/editorColorPrimary"
+        />
+
+    <padding
+        android:left="1dp"
+        android:top="1dp"
+        android:right="1dp"
+        android:bottom="1dp"/>
+
+    <corners
+        android:bottomRightRadius="@dimen/btn_round_radii"
+        android:bottomLeftRadius="@dimen/btn_round_radii"
+        android:topLeftRadius="@dimen/btn_round_radii"
+        android:topRightRadius="@dimen/btn_round_radii"/>
+</shape>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inventory</string>
+    <string name="action_delete_all_entries">Delete All Items</string>
+    <string name="add_img_btn">Add Image</string>
+
+    <string name="empty_view_title_text">The inventory is empty.</string>
+    <string name="empty_view_subtitle_text">Begin populating the list view to get started.</string>
+
+    <string name="editor_activity_title_new_item">Add a Item</string>
+    <string name="editor_activity_title_edit_item">Edit Item</string>
+
+    <string name="action_save">Save</string>
+
+    <string name="editor_insert_item_successful">Item saved</string>
+    <string name="editor_insert_item_failed">Error with saving item</string>
+    <string name="editor_update_item_successful">Item updated</string>
+    <string name="editor_update_item_failed">Error with updating item</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="editor_delete_item_successful">Item deleted</string>
+    <string name="editor_delete_item_failed">Error with deleting item</string>
+    <string name="delete_dialog_msg">Delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="category_name">Item</string>
+    <string name="category_quantity">Quantity</string>
+    <string name="category_price">Price Per Item</string>
+    <string name="hint_item_name">Name</string>
+    <string name="hint_item_price">Price</string>
+    <string name="unit_item_price">USD</string>
+
+    <string name="sale_button">Sale</string>
+
+    <string name="tst_neg_vals">Negative values prohibited</string>
+    <string name="tst_txt_fields">All fields must be filled in order to save item</string>
+
+    <string name="supplier_default_email">example@supplier.org</string>
+    <string name="supplier_order_subject">Order for</string>
+    <string name="supplier_default_content_beginning">
+        Greetings Supplier,\n\nWe\'d like to place INSERT_QUANTITY new orders for
+    </string>
+    <string name="supplier_default_content_ending">.\n\n Thanks,\nYOUR_SIGNATURE_HERE </string>
+</resources>

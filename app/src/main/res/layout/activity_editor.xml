@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:id="@+id/container_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/category_name"
+            style="@style/CategoryStyle" />
+
+        <EditText
+            android:id="@+id/edit_item_name"
+            android:hint="@string/hint_item_name"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldNameStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_name"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/category_quantity"
+            style="@style/CategoryStyle"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_item_quantity"
+                android:text="0"
+                android:inputType="number"
+                style="@style/EditorFieldQuantityStyle" />
+
+            <LinearLayout
+                style="@style/QuantityButtonsLayoutStyle">
+
+                <ImageButton
+                    android:id="@+id/quantity_dec_imgbtn"
+                    style="@style/QuantityButtonStyle"
+                    android:background="@drawable/ic_minus_sign"/>
+
+                <ImageButton
+                    android:id="@+id/quantity_inc_imgbtn"
+                    style="@style/QuantityButtonStyle"
+                    android:background="@drawable/ic_plus_sign"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_quantity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/category_price"
+            style="@style/CategoryStyle" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_item_price"
+                android:hint="@string/hint_item_price"
+                android:inputType="number"
+                style="@style/EditorFieldPriceStyle" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/unit_item_price"
+                style="@style/EditorPriceUnitsStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ll_img_container_marginTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="@dimen/iv_item_width"
+            android:layout_height="@dimen/iv_item_height"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_item_default" />
+
+        <Button
+            android:id="@+id/add_img_btn"
+            android:layout_width="@dimen/btn_addImg_width"
+            android:layout_height="@dimen/ll_btmBtns_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/btn_addImg_marginLeft"
+            android:text="@string/add_img_btn"
+            style="@style/PrimaryBtnStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomEditBtns"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_btmBtns_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deleteItemBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Delete Item"
+            style="@style/BtmBtnsStyle"/>
+
+        <Button
+            android:id="@+id/placeOrderBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Place Order"
+            style="@style/BtmBtnsStyle" />
+    </LinearLayout>
+</RelativeLayout>
